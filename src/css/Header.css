@@ -1,0 +1,54 @@
+/* Header Styles */
+header {
+  background: linear-gradient(
+    to right,
+    #3c2937,
+    #b90e71
+  ); /* Deep red to dark maroon gradient */
+  color: #fff; /* White text */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+/* Navigation Styles */
+nav {
+  display: flex;
+  gap: 20px; /* Maintain spacing between links */
+}
+
+nav a {
+  color: #fff; /* White text */
+  text-decoration: none;
+  padding: 8px 16px; /* Slightly more padding for better readability */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold; /* Make links bolder for emphasis */
+}
+
+nav a:hover {
+  background-color: #e0e0e0; /* Lighter grey hover effect */
+}
+
+/* Login/Signup Button Styles */
+.login-btn,
+.signup-btn {
+  background-color: #aef1b0a1; /* Green background */
+  border: none;
+  color: white;
+  padding: 12px 24px; /* Increased padding for a more prominent button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 4px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #388e3c; /* Darker green hover effect */
+}
