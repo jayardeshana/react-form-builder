@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/BookTable.css";
-const BookList = ({ books, onBookClick }) => {
+const BookList = ({ searchString, books, onBookClick }) => {
+  const filteredBooks = searchString
+    ? books.filter((book) =>
+        book.title.toLowerCase().includes(searchString.trim().toLowerCase())
+      )
+    : books;
+
   return (
     <div className="table-container">
       <table className="table table-striped table-hover">
@@ -15,7 +21,7 @@ const BookList = ({ books, onBookClick }) => {
           </tr>
         </thead>
         <tbody>
-          {books.map((book) => (
+          {filteredBooks.map((book) => (
             <tr key={book.id} onClick={() => onBookClick(book)}>
               <td>{book.title}</td>
               <td>{book.author}</td>

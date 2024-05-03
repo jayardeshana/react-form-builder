@@ -19,9 +19,11 @@ const AddBookModel = ({ selectedBook, onAddBook, onClose, onEditBook }) => {
 
     if (selectedBook) {
       const editedBookData = { ...bookData, id: selectedBook.id };
+      localStorage.setItem("books", JSON.stringify(editedBookData));
       onEditBook(editedBookData);
     } else {
       const newBookData = { ...bookData, id: uuidv4() };
+      localStorage.setItem("books", JSON.stringify(newBookData));
       onAddBook(newBookData);
     }
     setBookData({

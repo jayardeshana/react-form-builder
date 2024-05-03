@@ -24,19 +24,22 @@ const HomePage = () => {
       return book.id === editedBook.id ? editedBook : book;
     });
     setBooks(updatedBooks);
-    console.log(editedBook);
     setShowModal(false);
     setSelectedBook(null);
   };
 
-  const filterdBooks = books.filter((book) => {
-    book.title.toLowerCase().includes(searchString.toLowerCase());
-  });
-
   return (
     <>
-      <Header onAddClick={() => setShowModal(true)} />
-      <BookList books={books} onBookClick={handleBookClick} />
+      <Header
+        searchString={searchString}
+        setSearchString={setSearchString}
+        onAddClick={() => setShowModal(true)}
+      />
+      <BookList
+        searchString={searchString}
+        books={books}
+        onBookClick={handleBookClick}
+      />
       {showModal && (
         <AddBookModel
           selectedBook={selectedBook}
