@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../css/Login.css";
-import { useNavigate } from "react-router-dom";
 const Signup = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -9,7 +8,6 @@ const Signup = () => {
     bio: "",
     country: "",
   });
-  const navigate = useNavigate();
   const [submittedData, setSubmittedData] = useState(null);
 
   const handleSubmit = (e) => {

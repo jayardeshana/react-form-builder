@@ -32,20 +32,25 @@ nav a:hover {
 }
 
 /* Login/Signup Button Styles */
-.login-btn,
-.signup-btn {
-  background-color: #aef1b0a1; /* Green background */
+.input-button {
+  background-color: #aef1b0a1;
   border: none;
   color: white;
-  padding: 12px 24px; /* Increased padding for a more prominent button */
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 17px;
   transition: background-color 0.3s ease;
-  margin: 4px;
+  margin: 1px;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: row; /* Changed from 'row' to 'column' */
+  height: 50px;
 }
 
 .login-btn:hover,

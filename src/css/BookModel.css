@@ -1,0 +1,50 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, #3c2937, #b90e71);
+  border: 2px solid #b90e71;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure the popup appears above other content */
+  max-width: 80%; /* Limit the width of the popup */
+}
+
+.popup-inner {
+  max-width: 400px;
+  margin: 0 auto;
+  color: aliceblue;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  color: aliceblue;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #8fd092a1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,71 @@
+/* BookTable.css */
+
+/* Container Styles */
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  padding: 16px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  color: #555;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.table td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Striped Rows */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f8f8;
+}
+
+/* Hover Effect */
+.table-hover tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
