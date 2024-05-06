@@ -113,7 +113,7 @@ const AddBookModel = ({ selectedBook, onAddBook, onClose, onEditBook }) => {
           </div>
           <button type="submit">{selectedBook ? "Update" : "Add"}</button>
           <button type="button" onClick={onClose}>
-            {selectedBook ? "Delete" : "Cancel"}
+            Cancel
           </button>
         </form>
       </div>

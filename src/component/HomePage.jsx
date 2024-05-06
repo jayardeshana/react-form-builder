@@ -39,6 +39,7 @@ const HomePage = () => {
         searchString={searchString}
         books={books}
         onBookClick={handleBookClick}
+        setBooks={setBooks}
       />
       {showModal && (
         <AddBookModel
